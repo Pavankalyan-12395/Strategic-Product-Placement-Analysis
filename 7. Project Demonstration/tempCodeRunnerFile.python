@@ -1,0 +1,7 @@
+import { TableauViz } from 'https://embedding.tableau.com/api/tableau.embedding.3.latest.min.js';
+
+const viz = new TableauViz();
+viz.src = 'YOUR_TABLEAU_STORY_OR_DASHBOARD_URL';
+viz.toolbar = 'hidden';
+
+document.getElementById('tableauViz').appendChild(viz);
